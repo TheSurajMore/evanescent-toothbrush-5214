@@ -1,3 +1,17 @@
+* npx create-react-app my_myntra -> Create React App
+
+* Install chakra UI library -> Import chakraProvider in index.js file -> Wrap App with chakraProvoder. 
+
+* Install react-router-dom library/dependency. 
+ 
+* Install Axios library/dependency.
+
+* Create Components folder for different components. 
+  * Create AllRoutes.jsx component to give routes to all pages
+  * Create Pages folder and within that create different components for different pages. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
