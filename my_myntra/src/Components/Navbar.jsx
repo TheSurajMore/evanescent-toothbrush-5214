@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { FaCartPlus } from 'react-icons/fa';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   Box,
   Text,
@@ -41,13 +42,14 @@ export default function Navbar() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Logo</Box>
-          <Text>Home</Text>
-          <Text>Products</Text>
+          <Box><img src="" alt="" /></Box>
+          <RouterLink to="/" > <Button>Home</Button> </RouterLink>
+          <RouterLink to="/Products" > <Button>Products</Button> </RouterLink>
+
           <Flex alignItems={'center'}>
           <FaCartPlus size={30} />
-          <Text>Register</Text>
-          <Text>Login</Text>
+          <RouterLink to="/Login" > <Button>Login</Button> </RouterLink>
+          <RouterLink to="/Register" > <Button>Register</Button> </RouterLink>
             <Stack direction={'row'} spacing={7}>
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
