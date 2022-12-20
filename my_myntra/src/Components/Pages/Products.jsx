@@ -25,7 +25,7 @@ const Products = () => {
                                  description={e.description}
                                  title={e.title}
                                  price={e.proce}
-                                 reting={e.rating.rate}
+                                 rating={e.rating.rate}
                                  count={e.rating.count}
                         />
                     </GridItem>

@@ -44,7 +44,7 @@ export default function Navbar() {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box><img src="https://user-images.githubusercontent.com/108014979/208495703-90312b3e-604b-4731-947a-4b6542d5e884.png"
                     alt="Logo" 
-                    width={100}/>
+                    width={65}/>
           </Box>
           <RouterLink to="/" > <Button >Home</Button> </RouterLink>
           <RouterLink to="/Products" > <Button>Products</Button> </RouterLink>

@@ -11,19 +11,20 @@ import {
   const IMAGE =
     'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
   
-  export default function Product({image, id, description, title, price, reting, count,category}) {
+  export default function Product({image, id, description, title, price, rating, count,category}) {
     return (
       <Center py={12}>
         <Box
           role={'group'}
           p={6}
-          maxW={'330px'}
+          maxW={'500px'}
           w={'full'}
           bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'2xl'}
           rounded={'lg'}
           pos={'relative'}
-          zIndex={1}>
+          zIndex={1}
+          height={500}>
           <Box
             rounded={'lg'}
             mt={-12}
@@ -70,6 +71,9 @@ import {
                 {/* { Math.floor(Math.random() * 1000) } */}
               </Text>
             </Stack>
+            <Text fontWeight={800} fontSize={'xl'}>
+                Rating: {rating} ({count})
+              </Text>
           </Stack>
         </Box>
       </Center>
