@@ -8,7 +8,7 @@ import Products  from "./Pages/Products"
 const AllRoutes = () => {
     return(<div>
         <Routes>
-            <Route path="/" element={<Home/>}></Route>
+            <Route path="/" element={<Products/>}></Route>
             <Route path="/Login" element={<Login/>}></Route>
             <Route path="/Products" element={<Products/>}></Route>
             <Route path="/Register" element={<Register/>}></Route>
