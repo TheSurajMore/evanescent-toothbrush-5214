@@ -42,9 +42,13 @@ export default function Navbar() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box><img src="" alt="" /></Box>
-          <RouterLink to="/" > <Button>Home</Button> </RouterLink>
+          <Box><img src="https://user-images.githubusercontent.com/108014979/208495703-90312b3e-604b-4731-947a-4b6542d5e884.png"
+                    alt="Logo" 
+                    width={100}/>
+          </Box>
+          <RouterLink to="/" > <Button >Home</Button> </RouterLink>
           <RouterLink to="/Products" > <Button>Products</Button> </RouterLink>
+
 
           <Flex alignItems={'center'}>
           <FaCartPlus size={30} />
